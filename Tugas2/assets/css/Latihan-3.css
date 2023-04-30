@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  header > h3 {
+    padding-left: 10px;
+  }
+  
+  .nav {
+    background-color: #0070c0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .nav > li {
+    float: left;
+  }
+  
+  .nav > li > img {
+    padding: 8px 20px;
+  }
+  
+  .nav > li > a {
+    display: block;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+  }
+  
+  .nav:hover > li > a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  section {
+    background-color: lightblue;
+    overflow: hidden;
+    padding: 80px 0px;
+  }
+  
+  section > p {
+    font-size: 30px;
+    word-wrap: break-word;
+  }
+  
+  .active {
+    background-color: cornflowerblue;
+  }
+  
+  .quotes {
+    margin: auto;
+    width: 20%;
+  }
+  
+  .quotes .text-quotes {
+    font-family: "Sorts Mill Goudy", serif;
+    font-size: 48px;
+  }
+  
+  .quotes > p {
+    margin-top: 0;
+    font-weight: 100;
+  }
+  
+  .grid-container {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 10px;
+  }
+  
+  .grid-item-1,
+  .grid-item-2 {
+    border: 1px solid #0070c0;
+    padding: 0px 0px 30px 0px;
+    margin: 0px 10px;
+    flex: 50%;
+  }
+  
+  .grid-item-1 > p,
+  .grid-item-2 > p {
+    padding: 0px 20px;
+  }
+  
+  .image,
+  .image-2 {
+    border-bottom: 1px solid #0070c0;
+  }
+  
+  .image > img {
+    width: 100%;
+    height: 250px;
+  }
+  
+  .image-2 > img {
+    height: 250px;
+  }
+  
+  @media (max-width: 800px) {
+    .grid-container {
+      flex-direction: column;
+    }
+  
+    .grid-item-1,
+    .grid-item-2 {
+      margin: 10px 0px;
+    }
+  }
+  
+  .foot-card {
+    margin: 20px;
+  }
+  
+  .link {
+    float: left;
+    padding: 5px 30px;
+    border: 1px solid #0070c0;
+    color: #0070c0;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    background-color: #04a9e6;
+    color: white;
+  }
+  
+  .time {
+    margin-top: 0;
+    float: right;
+    color: gray;
+  }
+  
+  footer {
+    padding: 50px 0px;
+    text-align: center;
+  }

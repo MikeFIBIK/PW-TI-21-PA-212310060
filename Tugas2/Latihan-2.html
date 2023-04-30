@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan 2 Module 2</title>
+    <!-- CSS -->
+    <style>
+      header {
+        color: green;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        margin: 0px 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      p {
+        text-align: justify;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      h3{
+        color: lightseagreen;
+      }
+
+      .grid-container {
+        display: flex;
+        flex-direction: row;  
+      }
+
+      .grid-item-1 {
+        border: 1px solid grey;
+        margin: 0px 10px;
+        padding: 20px 20px;
+        flex: 33.33%;
+      }
+
+      .grid-item-2 {
+        border: 1px solid grey;
+        margin: 0px 10px;
+        padding: 20px 20px;
+        flex: 33.33%;
+     }
+
+     .grid-item-3 {
+        border: 1px solid grey;
+        margin: 0px 10px;
+        padding: 20px 20px;
+        flex: 33.33%;
+     }
+
+     @media (max-width: 800px) {
+        .grid-container {
+            flex-direction: column;
+        }
+
+        .grid-item-1, .grid-item-2, .grid-item-3 {
+            margin: 10px 0px;
+        }
+     }
+     footer{
+        text-align: center;
+     }
+    </style>
+    <!-- End CSS -->
+  </head>
+  <body>
+    <header>
+    <h2><b>Daftar Hewan Dilindungi</b></h2>
+    </header>
+    <section>
+        <div class="grid-container">
+            <div class="grid-item-1">
+                <img src="https://images.theconversation.com/files/226871/original/file-20180710-70060-14c3cbu.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crops" alt="" class="img-center">
+                <h3>Orang Utan</h3>
+                <p>Orang utan dicirikan oleh rambut di seluruh badannya yang berwarna kemerahan. Satwa ini merupakan mamalia arboreal terbesar yang menghabiskan hampir seluruh waktunya di pepohonan. Lengannya yang panjang dan kuat serta tangan dan kakinya yang dapat mencengkeram erat.</p>
+            </div>
+            <div class="grid-item-2">
+                <img src="https://www.wartabuana.com/wp-content/uploads/2021/02/kera-emas.jpg" alt="" class="img-center">
+                <h3>Kera Emas</h3>
+                <p>Monyet yang unik ini juga dikenal sebagai hewan yang memiliki adaptasi yang sangat baik dengan lingkungan yang bersuhu sangat dingin. Umumnya, monyet hidung pesek rambut emas tinggal di hutan pegunungan.</p>
+            </div>
+            <div class="grid-item-3">
+                <img src="https://jurnalpost.com/wp-content/uploads/2023/01/Burung-Cendrawasih.webp" alt="" class="img-center">
+                <h3>Burung Cenderawasih</h3>
+                <p>Burung cenderawasih termasuk ke dalam hewan langka dan hanya bisa ditemukan di Papua. Burung cenderawasih punya tampilan yang cantik yang membuat burung ini sering menjadi perburuan liar untuk didagangkan.</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <h4>Copyright &copy; Michael Fernandez 2023</h4>
+    </footer>
+</body>
+</html>
+  </body>
+</html>
